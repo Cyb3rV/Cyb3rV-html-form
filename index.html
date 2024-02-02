@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+
+        img{
+            width: 25px;
+            filter: grayscale(100%);
+        }
+
+        input[type="radio"]{
+            filter: grayscale(100%);
+        }
+
+        .body p{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <div class="wrapper border border-1 w-50">
+
+        <div class="header border border-1">
+            <div class="bg-light py-2 px-3">
+                <h2>Payment form example</h2>
+            </div>
+        </div>
+
+        <div class="body p-3">
+                
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+
+                <div class="row g-3 d-flex justify-content-between">
+                    <div class="col-5">
+                        <label for="card" class="form-label">Card #</label>
+                    </div>
+                    
+                    <div class="col-3">
+                        <label for="cvc" class="form-label">CVC #</label>
+                    </div>
+                    
+                    <div class="col-4">
+                        <label for="amount" class="form-label">Amount</label>
+                    </div>
+                    
+                </div>
+                
+                <div class="row g-3 d-flex justify-content-between">
+                    <div class="col-5">
+                        <input type="text" id="card" class="form-control" placeholder="XXXXXXXXXXXX" maxlength="12">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" id="cvc" class="form-control" placeholder="0000" maxlength="4">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" id="amount" class="form-control" placeholder="Amount">
+                    </div>
+                </div>
+
+                <div class="row g-3 d-flex justify-content-between">
+                    <div class="col-6">
+                        <label for="fname" class="form-label">First Name</label>
+                    </div>
+                    
+                    <div class="col-6">
+                        <label for="lname" class="form-label">Last Name</label>
+                    </div>
+                </div>
+
+                <div class="row g-3 d-flex justify-content-between">
+                    <div class="col-6">
+                        <input type="text" id="fname" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="lname" class="form-control">
+                    </div>
+                </div>
+                
+
+                <div class="row g-3 d-flex justify-content-between">
+                    <div class="col-6">
+                        <label for="city" class="form-label">City</label>
+                    </div>         
+                    <div class="col-3">
+                        <label for="state" class="form-label">State</label>
+                    </div>
+                    <div class="col-3">
+                        <label for="postalcode" class="form-label">Postal Code</label>
+                    </div>
+                </div>
+
+                <div class="row g-3 d-flex justify-content-between">
+                    <div class="col-6">
+                        <input type="text" id="city" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pick a State</option>
+                            <option value="1">FL</option>
+                            <option value="2">TX</option>
+                            <option value="3">NC</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" id="postalcode" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row g-3 d-flex justify-content-between">
+                    <div class="col-6">
+                        <label for="payment" class="form-label">We accept:</label>
+                    </div>         
+                    <div class="col-6">
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                </div>
+
+                <div class="row g-3 d-flex justify-content-between">
+                    <div class="col-4">
+                        <div class="bg-secondary d-flex justify-content-between p-2 rounded">
+                            <div>                  
+                                <input type="radio" name="flexRadioDefault" checked>
+                                <img src="https://pngimg.com/uploads/mastercard/mastercard_PNG16.png"/ >
+                            </div>
+                            <div>                  
+                                <input type="radio" name="flexRadioDefault">
+                                <img src="https://www.pngmart.com/files/5/American-Express-PNG-Transparent-Image.png"/ >
+                            </div>
+                            <div>                  
+                                <input type="radio" name="flexRadioDefault">
+                                <img src="https://imgs.search.brave.com/jDJtPDRcNoCBtZOk3QU0vmcUZ_SYwdyYhNTcjY2qkEY/rs:fit:860:0:0/g:ce/aHR0cDovL3d3dy5j/cmVkaXQtY2FyZC1s/b2dvcy5jb20vaW1h/Z2VzL2Rpc2NvdmVy/X2NyZWRpdC1jYXJk/LWxvZ29zL2Rpc2Nv/dmVyX25ldHdvcmsy/LmpwZw"/ >
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="col-6">              
+                            <textarea class="form-control" id="message"></textarea>
+                            <p class="text-muted">Add any notes here.</p>               
+                    </div>
+                </div>
+        </div>
+
+        <div class="footer border border-1">
+            <div class="gap-2 d-flex justify-content-end bg-light py-2 px-3">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
